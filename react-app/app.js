@@ -1,14 +1,30 @@
-const http = require('http')
-const port = 3000
+import "./styles.css"
 
-    const server = http.createServer(function(req, res) {
-
-})
-
-server.listen(port,function(error) {
-    if (error) {
-        console.log('Something went wrong', error)
-    } else {
-        console.log('Server is listening on port ' + port)
-    }
-})
+function App() {
+    return (
+        <div className="calculator-grid">
+            <div className="output">
+                <div className="previous-operand"></div>
+                <div className="current-operand"></div>
+            </div>
+            <button className="span-two">AC</button>
+            <button>DEL</button>
+            <button>÷</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>*</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>+</button>
+            <button>7</button>
+            <button>8</button>
+            <button>-</button>
+            <button>.</button>
+            <button>0</button>
+            <button className="span-two">=</button>
+        </div>
+    )
+  
+}
